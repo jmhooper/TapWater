@@ -1,0 +1,87 @@
+<style>
+  @font-face {
+    font-family: Ubuntu;
+    src: url(Ubuntu-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: Ubuntu;
+    src: url(Ubuntu-Bold.ttf);
+    font-weight: bold;
+  }
+
+  * {
+    font-family: Ubuntu;
+    margin: 0 0;
+    padding: 0 0;
+  }
+
+  body {
+    background-color: #ECF0F1;
+  }
+
+  h1, p {
+    color: #505050;
+  }
+
+  p {
+    margin-top: 16px;
+    font-size: 16px;
+  }
+
+  div#wrapper {
+    background-color: white;
+    padding: 16px 16px 24px 16px;
+  }
+
+  div#header {
+    height: 64px;
+    margin-bottom: -4px
+  }
+
+  img#logo {
+    display: inline;
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    box-shadow: 1 1 1 rgba(0, 0, 0, 0.25);
+  }
+
+  h1#brand {
+    width: 120px;
+    display: inline;
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    position: relative;
+    top: -24px;
+  }
+</style>
+
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <img id="logo" src="about-icon.png">
+      <h1 id="brand">TapWater</h1>
+    </div>
+    <p>
+        TapWater is an iOS application built to help users track how much water they drink in a day.
+        The app allows a user to set a goal for the number of ounces of water they wish to drink per day and track their progress as they strive to meet that goal.
+        Whenever a user finishes a container of water, they can open the app and tap a button corresponding to that container,
+        hence the name, "TapWater".
+    </p>
+    <p>
+        The app was inspired by how difficult it can be to add data about water consumption to most health/fitness apps.
+        TapWater seeks to alleviate this problem by allowing users to create "containers" that represent the quantities of water they drink most often.
+        For example, a user may have a 25 ounce water bottle they use frequently.
+        They could add the container to the app and tap it whenever they finish it off.
+    </p>
+    <p>
+        Special thanks to Cody Rogers for his part in making this project possible.
+    </p>
+    <p>
+      Version: {{ version }}
+    </p>
+  </div>
+</body>

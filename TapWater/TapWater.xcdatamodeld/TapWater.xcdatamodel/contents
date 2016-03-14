@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15D21" minimumToolsVersion="Xcode 7.0">
+    <entity name="TWContainer" representedClassName=".TWContainer" parentEntity="TWManagedObject" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="volume" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="drinks" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="TWDrink" inverseName="container" inverseEntity="TWDrink" syncable="YES"/>
+    </entity>
+    <entity name="TWDrink" representedClassName=".TWDrink" parentEntity="TWManagedObject" syncable="YES">
+        <attribute name="drinkDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="container" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TWContainer" inverseName="drinks" inverseEntity="TWContainer" syncable="YES"/>
+    </entity>
+    <entity name="TWManagedObject" isAbstract="YES" syncable="YES">
+        <attribute name="createdAt" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="removed" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="uid" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updatedAt" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="TWContainer" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="TWDrink" positionX="-63" positionY="-18" width="128" height="75"/>
+        <element name="TWManagedObject" positionX="-63" positionY="18" width="128" height="105"/>
+    </elements>
+</model>

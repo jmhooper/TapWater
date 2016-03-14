@@ -1,0 +1,13 @@
+PODS:
+  - AsyncSwift (1.7.2)
+  - Eureka (1.4.1)
+
+DEPENDENCIES:
+  - AsyncSwift
+  - Eureka
+
+SPEC CHECKSUMS:
+  AsyncSwift: 46a78bceb11f0e5bb52747f740d9692ec78d2d7c
+  Eureka: 2f1921d3162491921d2fef3b516bc4ef93a05122
+
+COCOAPODS: 0.39.0
